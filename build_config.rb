@@ -17,10 +17,16 @@ MRuby::Build.new do |conf|
   #   g.cc.flags << '-g' # append cflags in this gem
   # end
   # conf.gem 'examples/mrbgems/c_and_ruby_extension_example'
-  # conf.gem :core => 'mruby-eval'
+  conf.gem :core => 'mruby-eval'
+  conf.gem :core => 'mruby-sleep'
   # conf.gem :mgem => 'mruby-io'
   # conf.gem :github => 'iij/mruby-io'
   # conf.gem :git => 'git@github.com:iij/mruby-io.git', :branch => 'master', :options => '-v'
+  conf.gem github: 'iij/mruby-require'
+  conf.gem github: 'iij/mruby-iijson'
+  conf.gem github: 'iij/mruby-mtest'
+  # conf.gem github: 'matsumotory/mruby-http2'
+  conf.gem github: 'matsumoto-r/mruby-simplehttp'
 
   # include the default GEMs
   conf.gembox 'default'
