@@ -25,6 +25,7 @@ MRuby::Build.new do |conf|
   conf.gem github: 'iij/mruby-require'
   conf.gem github: 'iij/mruby-iijson'
   conf.gem github: 'iij/mruby-mtest'
+  conf.gem :github => 'kjunichi/mruby-uuid'
   # conf.gem github: 'matsumotory/mruby-http2'
   conf.gem github: 'matsumoto-r/mruby-simplehttp'
 
