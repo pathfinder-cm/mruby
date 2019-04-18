@@ -9,7 +9,7 @@ MRuby::Build.new do |conf|
   end
 
   # Turn on `enable_debug` for better debugging
-  # enable_debug
+  enable_debug
 
   # Use mrbgems
   # conf.gem 'examples/mrbgems/ruby_extension_example'
@@ -25,6 +25,8 @@ MRuby::Build.new do |conf|
   conf.gem github: 'iij/mruby-require'
   conf.gem github: 'iij/mruby-iijson'
   conf.gem github: 'iij/mruby-mtest'
+  conf.gem github: 'iij/mruby-regexp-pcre'
+  conf.gem github: 'appPlant/mruby-os'
   conf.gem :github => 'kjunichi/mruby-uuid'
   # conf.gem github: 'matsumotory/mruby-http2'
   conf.gem github: 'matsumoto-r/mruby-simplehttp'
